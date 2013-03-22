@@ -11,6 +11,7 @@ Cocktail.mix(subject, {
     '@talents': [Traversable],
     '@properties': {
         name: 'subject',
+        coolEnough: false,
         properties : {
             height : 10,
             color  : 'black'
@@ -21,6 +22,9 @@ Cocktail.mix(subject, {
         return "Hi! My " + property + " value is " + this.down(property) + ", thanks for asking.";
     }
 });
+
+console.log('name: ' + subject.getName());
+console.log('is it cool enough: ' + (subject.isCoolEnough() ? "YES" : "NO, not yet"));
 
 console.log(subject.whatsYourValueOn('nickname'));
 console.log(subject.whatsYourValueOn('name'));
