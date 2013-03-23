@@ -1,8 +1,17 @@
+/*
+ *
+ * Copyright (c) 2013 Maximiliano Fierro
+ * Licensed under the MIT license.
+ */
 'use strict';
 
 var Cocktail = require('Cocktail'),
     Traversable = function(){};
 
+/**
+ * @trait Traversable
+ * 
+ */
 Cocktail.mix(Traversable, {
 
     down : function(pattern){
@@ -15,10 +24,6 @@ Cocktail.mix(Traversable, {
         }
 
         return value;
-    },
-
-    query : function(query){
-
     }
 
 });
