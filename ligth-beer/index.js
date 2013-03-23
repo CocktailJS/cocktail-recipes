@@ -7,7 +7,7 @@
 
 var Cocktail = require('Cocktail'),
     Traversable = require('./lib/Traversable'),
-    subject;
+    subject, properties;
 
 //create an object with some property
 subject = {
@@ -47,5 +47,13 @@ console.log(subject.whatsYourValueOn('properties.color'));
 //Annotations are simple meta-data used to perform some operations over the Class/Object
 //So they are not part of the mixed result
 console.log(subject.whatsYourValueOn('@talents'));
-console.log("Yes, I mean if I want to ask the subject about @talents property it would say: " + subject['@talent']);
+console.log("Yes, I mean if I want to ask the subject about @talents property it would say: " + subject['@talents']);
+
+//The idea is to avoid adding non-semantic properties to your classes. 
+//A good example is the property `properties`, in this case the subject has a getProperties() 
+//and a properties instance variable but they have nothing to do with the annotation @properties
+properties = subject.getProperties();
+console.log('My subject properties is an object: ' + properties + ' with height: ' + properties.height + ' and color: ' + properties.color);
+
+
 
