@@ -5,27 +5,34 @@
  */
 'use strict';
 
-var Cocktail = require('Cocktail'),
-    Traversable = function(){};
+var Traversable = function(){};
+// Cocktail = require('Cocktail'),
+
 
 /**
  * @trait Traversable
- * 
+ * This is a simple example of a Trait/Talent.
+ * In its simplest expression a Trait is a Class with behavior but not state.
+ * In this example we demonstrate how a simple Class definiton can be used as a Trait with Cocktail.
  */
-Cocktail.mix(Traversable, {
 
-    down : function(pattern){
-        var keys = pattern.split('.'),
-            value = this,
-            i, ln;
 
-        for(i = 0, ln = keys.length; i < ln; i++ ){
-            value = value[keys[i]];
-        }
+/**
+ * @method down
+ */
+Traversable.prototype.down = function(pattern){
+    var keys = pattern.split('.'),
+        value = this,
+        i, ln;
 
-        return value;
+    for(i = 0, ln = keys.length; i < ln; i++ ){
+        value = value[keys[i]];
     }
 
-});
+    return value;
+};
 
+
+
+//export this class
 module.exports = Traversable;

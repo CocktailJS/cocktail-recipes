@@ -7,7 +7,7 @@
 
 var Cocktail = require('Cocktail'),
     Traversable = require('./lib/Traversable'),
-    subject, properties;
+    subject, properties, MyClass;
 
 //create an object with some property
 subject = {
@@ -55,5 +55,50 @@ console.log("Yes, I mean if I want to ask the subject about @talents property it
 properties = subject.getProperties();
 console.log('My subject properties is an object: ' + properties + ' with height: ' + properties.height + ' and color: ' + properties.color);
 
+
+//Now we are going to do the same but this time apply Traversable to a class
+
+MyClass = function(){};
+
+Cocktail.mix(MyClass, {
+    '@talents': [Traversable],
+   
+    '@properties': {
+        name: 'subject',
+        coolEnough: false,
+        properties : {
+            height : 10,
+            color  : 'black'
+        }
+    },
+
+    nickname: 'daClass',
+
+    whatsYourValueOn: function(property){
+        var value = this.down(property);
+        return "Hi! My " + property + (value ?  " value is " + value : " is not defined here, sorry") + ", thanks for asking.";
+    }
+
+
+});
+
+
+//and now let's use MyClass to create a new subject:
+subject = new MyClass();
+
+//get the name using the getter
+console.log('name: ' + subject.getName());
+//ask about the nickname
+console.log(subject.whatsYourValueOn('nickname'));
+//and about properties.height
+console.log(subject.whatsYourValueOn('properties.height'));
+//let's set new protperties
+subject.setProperties({
+    height: 1000,
+    color : 'orange'
+});
+//and get the new ones
+properties = subject.getProperties();
+console.log('My subject properties is an object: ' + properties + ' with height: ' + properties.height + ' and color: ' + properties.color);
 
 
