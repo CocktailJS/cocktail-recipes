@@ -61,7 +61,7 @@ console.log('My subject properties is an object: ' + properties + ' with height:
 MyClass = function(){};
 
 Cocktail.mix(MyClass, {
-    '@talents': [Traversable],
+    '@traits': [Traversable],  //since this is a class, we use a traits annotation
    
     '@properties': {
         name: 'subject',
