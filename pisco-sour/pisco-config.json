@@ -1,0 +1,9 @@
+{
+  "classes": {
+    "./sample/Logger": {
+      "params" : {
+        "format": "> %s : %s"
+      }        
+    }
+  }
+}
