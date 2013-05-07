@@ -5,7 +5,7 @@
   "description": "Create and use custom annotations",
   "main": "index.js",
   "dependencies": {
-    "cocktail": "~0.0.4",
+    "cocktail": "~0.1.0",
     "meld": "~1.2.2"
   },
   "scripts": {
