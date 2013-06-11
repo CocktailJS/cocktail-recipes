@@ -58,9 +58,7 @@ console.log('My subject properties is an object: ' + properties + ' with height:
 
 //Now we are going to do the same but this time apply Traversable to a class
 
-MyClass = function(){};
-
-Cocktail.mix(MyClass, {
+MyClass = Cocktail.mix({
     '@traits': [Traversable],  //since this is a class, we use a traits annotation
    
     '@properties': {
