@@ -5,15 +5,19 @@ require('../lib/Injected');
 
 
 var Cocktail = require('Cocktail'),
-    util = require('util'),
-    Logger = function(){};
+    util = require('util');
 
 
-Cocktail.mix(Logger, {
-    '@injected': ['format'],
+Cocktail.mix({
+    '@exports'  : module,
+    '@injected' : ['format'],
 
     '@properties': {
         'format' : undefined
+    },
+
+    constructor: function(){
+        //DO NOTHING
     },
 
     _log: function(type, message){
@@ -28,5 +32,3 @@ Cocktail.mix(Logger, {
       this._log("DEBUG", message);
     }
 });
-
-module.exports = Logger;

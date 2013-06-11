@@ -7,6 +7,7 @@ var Cocktail = require('Cocktail'),
 
 
 Cocktail.mix(Pisco, {
+    '@exports' : module,
 
     resolve: function(opts, rootDir){
         var me = this;
@@ -43,7 +44,3 @@ Cocktail.mix(Pisco, {
     }
 
 });
-
-Pisco.Injected = Injected;
-
-module.exports = Pisco;  

@@ -18,7 +18,10 @@ Injected.addDescriptorFor = function(classKey, desc){
 };
 
 Cocktail.mix(Injected, {
+    '@exports'   : module,
+    
     '@annotation': 'injected',
+    
     '@properties':{
         'parameter': undefined
     },
@@ -95,4 +98,3 @@ Cocktail.mix(Injected, {
 
 });
 
-module.exports = Injected;
