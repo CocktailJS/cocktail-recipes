@@ -13,3 +13,13 @@ cd light-beer
 npm install
 node index.js
 ````
+##Single Paramater Example
+Under the folder _single-params_ you will find another example about using the Single Paramater Class definition.
+In this example we explore how to define Classes and a Trait using the some new features introduced in Cocktail v0.2 
+
+````
+cd light-beer/single-params
+npm install
+node index.js
+````
+
