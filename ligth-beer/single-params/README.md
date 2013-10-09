@@ -17,22 +17,23 @@ method called _getGreetable_.
 ###Person
 **Class**
 
-A _Person_ class is _Greetable_ meaning that every person knows how to sayHi. It has a _property_ called **greeting**,
-with a default *'Hello'* value.
+A _Person_ class is _Greetable_ meaning that every person knows how to sayHi. It has a _property_ called **greeting**, with a default *'Hello'* value.
 
 ###Pirate
 **Class**
 
-A _Pirate_ is a more specific kind of _Person_. In this case, our Pirates have a different way to sayHi, they usually 
-use the word 'Ahoy' to greet someone else, so we just override the _greeting_ property with a default value of *'Ahoy'*.
+A _Pirate_ is a more specific kind of _Person_. In this case, our Pirates have a different way to sayHi, they usually use the word 'Ahoy' to greet someone else, so we just override the _greeting_ property with a default value of *'Ahoy'*.
 
-Finally, we instantiate our classes in the _index.js_ file and create a _people_ array containing a Pirate and a Person
-instance so we can loop the array and ask everyone to sayHi.
+Finally, we instantiate our classes in the _index.js_ file and create a _people_ array containing a Pirate (named Jack) and a Person (named John) so we can loop the array and ask everyone to sayHi.
 
 ##Execute the example
 
 ````
 npm install
 node index.js
+
+- Jack: Ahoy!
+- John: Hello!
 ````
+
 

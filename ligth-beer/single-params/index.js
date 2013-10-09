@@ -8,12 +8,13 @@
 var Person = require('./Person'),
     Pirate = require('./Pirate'),
     people = [],
+    person,
     i;
 
-people.push(new Pirate());
-people.push(new Person());
+people.push(new Pirate({ name: 'Jack' }));
+people.push(new Person({ name: 'John' }));
 
 for (i = 0; i < people.length; i++) {
-    people[i].sayHi();
+	person = people[i];
+    console.log('- '+person.getName()+': '+person.sayHi());
 }
-

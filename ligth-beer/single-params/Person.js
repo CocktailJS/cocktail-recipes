@@ -14,10 +14,18 @@ Cocktail.mix({
     '@traits'  : [Greetable],
     
     '@properties' : {
+        name     : undefined,
         greeting : 'Hello'
     },
 
-    constructor: function (greeting) {
+    constructor: function (options) {
+        var name     = options && options.name,
+            greeting = options && options.greeting;
+
+        if(name) {
+            this.setName(name);
+        }
+
         if (greeting) {
             this.setGreeting(greeting);
         }

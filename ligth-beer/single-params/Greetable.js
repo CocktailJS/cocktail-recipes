@@ -9,12 +9,13 @@ var Cocktail = require('Cocktail');
 
 Cocktail.mix({
     '@requires' : ['getGreeting'],
+    
     '@exports'  : module,
 
     sayHi : function() {
         var greeting = this.getGreeting();
 
-        console.log(greeting + '!');
+        return greeting + '!';
     }
 
 });
