@@ -12,12 +12,12 @@ We have defined a very simple model as described below:
 
 This is the _trait_ that contains the logic for greeting someone with the _sayHi()_ method.
 As a trait it requires some state to be defined in the implementing class. In this case _Greetable_ requires a
-method called _getGreetable_.
+method called `getGreeting`.
 
 ###Person
 **Class**
 
-A _Person_ class is _Greetable_ meaning that every person knows how to sayHi. It has a _property_ called **greeting**, with a default *'Hello'* value.
+A _Person_ class is _Greetable_ meaning that every person knows how to sayHi. It has a _property_ called **greeting**, with a default *'Hello'* value. Since it is a property defined with a `@properties` annotation, the `getGretting` method is defined.
 
 ###Pirate
 **Class**
