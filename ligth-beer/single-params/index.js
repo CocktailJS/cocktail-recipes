@@ -15,6 +15,6 @@ people.push(new Pirate({ name: 'Jack' }));
 people.push(new Person({ name: 'John' }));
 
 for (i = 0; i < people.length; i++) {
-	person = people[i];
+    person = people[i];
     console.log('- '+person.getName()+': '+person.sayHi());
 }
