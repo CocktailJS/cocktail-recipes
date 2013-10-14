@@ -1,0 +1,13 @@
+{
+  "name": "lime-beer",
+  "version": "0.0.0",
+  "description": "Example of Traits and Custom Annotations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cocktail": "~0.4.3"
+  }
+}
