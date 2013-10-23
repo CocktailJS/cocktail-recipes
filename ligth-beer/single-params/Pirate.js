@@ -5,10 +5,10 @@
  */
 'use strict';
 
-var Cocktail = require('Cocktail'),
+var cocktail = require('cocktail'),
     Person   = require('./Person');
 
-Cocktail.mix({
+cocktail.mix({
     '@exports' : module,
     '@extends' : Person,
 

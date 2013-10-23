@@ -1,10 +1,10 @@
 'use strict';
 
-var Cocktail  = require('Cocktail'),
+var cocktail  = require('cocktail'),
     Eventable = require('./trait/Eventable'),
     Emitter   = require('events').EventEmitter;
 
-Cocktail.mix({
+cocktail.mix({
     '@exports'  : module,
     '@as'       : 'class',
 

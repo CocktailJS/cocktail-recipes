@@ -1,10 +1,10 @@
 'use strict';
 
-var Cocktail = require('Cocktail');
+var cocktail = require('cocktail');
 
 require('./annotation/Eventable');
 
-Cocktail.mix({
+cocktail.mix({
     '@exports': module,
     '@as'    : 'class',
     

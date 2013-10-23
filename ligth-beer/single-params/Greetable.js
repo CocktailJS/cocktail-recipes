@@ -5,9 +5,9 @@
  */
 'use strict';
 
-var Cocktail = require('Cocktail');
+var cocktail = require('cocktail');
 
-Cocktail.mix({
+cocktail.mix({
     '@requires' : ['getGreeting'],
     
     '@exports'  : module,

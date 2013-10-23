@@ -5,7 +5,7 @@
  */
 'use strict';
 
-var Cocktail = require('Cocktail'),
+var cocktail = require('cocktail'),
     Traversable = require('./lib/Traversable'),
     subject, properties, MyClass;
 
@@ -15,7 +15,7 @@ subject = {
 };
 
 //mix it with a Traversable talent and add some properties
-Cocktail.mix(subject, {
+cocktail.mix(subject, {
     '@talents': [Traversable],
     '@properties': {
         name: 'subject',
@@ -58,7 +58,7 @@ console.log('My subject properties is an object: ' + properties + ' with height:
 
 //Now we are going to do the same but this time apply Traversable to a class
 
-MyClass = Cocktail.mix({
+MyClass = cocktail.mix({
     '@traits': [Traversable],  //since this is a class, we use a traits annotation
    
     '@properties': {

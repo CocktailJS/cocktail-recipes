@@ -1,10 +1,10 @@
 'use strict';
 
-var Cocktail  = require('Cocktail'),
+var cocktail  = require('cocktail'),
     Eventable = require('../trait/Eventable'),
     Emitter   = require('events').EventEmitter;
 
-Cocktail.mix({
+cocktail.mix({
     '@annotation': 'eventable',
     '@exports'   : module,
     '@as'        : 'class',
@@ -13,7 +13,7 @@ Cocktail.mix({
         parameter: undefined
     },
 
-    priority: Cocktail.SEQUENCE.PRE_EXPORTS,
+    priority: cocktail.SEQUENCE.PRE_EXPORTS,
 
     process: function(subject){
         var emitter = this.getParameter();
@@ -22,7 +22,7 @@ Cocktail.mix({
             emitter = new Emitter();
         }
 
-        Cocktail.mix(subject, {
+        cocktail.mix(subject, {
             '@traits': [Eventable],
 
             '@properties' : {
