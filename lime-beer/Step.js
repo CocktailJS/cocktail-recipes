@@ -1,8 +1,9 @@
 'use strict';
 
-var cocktail = require('cocktail');
+var cocktail  = require('cocktail'),
+    Eventable = require('./annotation/Eventable');
 
-require('./annotation/Eventable');
+cocktail.use(Eventable);
 
 cocktail.mix({
     '@exports': module,

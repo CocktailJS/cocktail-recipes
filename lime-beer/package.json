@@ -8,6 +8,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "cocktail": "~0.4.4"
+    "cocktail": "~0.5"
   }
 }
