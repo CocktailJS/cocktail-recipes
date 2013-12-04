@@ -13,7 +13,7 @@ cocktail.mix({
     '@properties': {
         name   : undefined,
         steps  : [],
-        emitter: new Emitter()
+        emitter: undefined
     },
 
     constructor: function(options) {
@@ -22,7 +22,10 @@ cocktail.mix({
             this.setName(options.name);
         }
 
+        this.setEmitter(new Emitter());
     },
+
+
 
     addSteps: function(steps) {
         var me = this;
