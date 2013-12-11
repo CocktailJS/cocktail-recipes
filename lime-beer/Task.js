@@ -12,7 +12,7 @@ cocktail.mix({
 
     '@properties': {
         name   : undefined,
-        steps  : [],
+        steps  : undefined,
         emitter: undefined
     },
 
@@ -23,6 +23,7 @@ cocktail.mix({
         }
 
         this.setEmitter(new Emitter());
+        this.setSteps([]);
     },
 
 
