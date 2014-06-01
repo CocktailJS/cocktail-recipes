@@ -18,6 +18,7 @@ subject = {
 cocktail.mix(subject, {
     '@talents': [Traversable],
     '@properties': {
+        nickname: 'default',
         name: 'subject',
         coolEnough: false,
         properties : {
@@ -40,6 +41,7 @@ console.log('is it cool enough: ' + (subject.isCoolEnough() ? "YES" : "NO, not y
 
 //the whatsYourValueOn method defined in the mix uses a method obtained by a Traversable talent
 console.log(subject.whatsYourValueOn('nickname'));
+console.log('Nickname by Getter:' + subject.getNickname());
 console.log(subject.whatsYourValueOn('name'));
 console.log(subject.whatsYourValueOn('properties.height'));
 console.log(subject.whatsYourValueOn('properties.color'));
