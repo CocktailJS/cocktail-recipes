@@ -10,6 +10,6 @@
   "dependencies": {
     "cocktail": "~0.5",
     "cocktail-annotation-evented": "0.0.3",
-    "cocktail-trait-configurable": "0.0.1"    
+    "cocktail-trait-configurable": "0.0.1"
   }
 }
