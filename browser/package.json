@@ -1,0 +1,18 @@
+{
+  "name": "browser",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browserify": "browserify index.js -o dist/js/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cocktail": "^0.5.3"
+  },
+  "devDependencies": {
+    "browserify": "^6.2.0"
+  }
+}
