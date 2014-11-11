@@ -31,5 +31,12 @@ It will show a Hello message and a message on the console.
 - Point your localhost to `./dist` folder
 - Browse http://localhost/index-require.html
 
+## Run All
+
+```bash
+    npm run all
+```
+
+
 ##Note
 **THIS IS AN EXPERIMENT** CocktailJS is **not** intended to run on the browser (yet).
