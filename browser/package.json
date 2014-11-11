@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "browserify": "browserify index.js -o dist/js/app.js"
+    "browserify": "browserify index.js -o dist/js/app.js",
+    "requirejs" : "node dist/js/requirejs/r.js -convert node_modules/cocktail/ dist/js/requirejs/cocktail"
   },
   "author": "",
   "license": "ISC",
