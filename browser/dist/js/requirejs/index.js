@@ -1,10 +1,11 @@
 requirejs.config({
-    baseUrl: './js/requirejs/',
-    packages: [{
-        name: 'cocktail',
-        location: 'cocktail',
-        main: 'lib/cocktail.js'
-    }]
+    baseUrl: './js/requirejs/'
+    // uncomment the following if generated cocktail package with r.js
+    // packages: [{
+    //     name: 'cocktail',
+    //     location: 'cocktail',
+    //     main: 'lib/cocktail.js'
+    // }]
 });
 
 requirejs(['app'],

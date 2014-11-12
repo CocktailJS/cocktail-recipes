@@ -6,8 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "browserify": "browserify index.js -o dist/js/app.js",
-    "requirejs" : "node dist/js/requirejs/r.js -convert node_modules/cocktail dist/js/requirejs/cocktail",
-    "all": "npm run browserify && npm run requirejs "
+    "requirejs": "browserify node_modules/cocktail/lib/cocktail.js --s cocktail -o  dist/js/requirejs/cocktail.js",
+    "all": "npm run browserify && npm run requirejs ",
+    "requirejs-with-r" : "node dist/js/requirejs/r.js -convert node_modules/cocktail dist/js/requirejs/cocktail"
+
   },
   "author": "",
   "license": "ISC",
