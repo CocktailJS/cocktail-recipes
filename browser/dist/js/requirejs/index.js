@@ -1,3 +1,11 @@
+requirejs.config({
+    packages: [{
+        name: 'cocktail',
+        location: './js/requirejs/cocktail',
+        main: 'lib/cocktail.js'
+    }]
+});
+
 requirejs(['./js/requirejs/app'],
 function(app){
 

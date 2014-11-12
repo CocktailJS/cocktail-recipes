@@ -1,6 +1,5 @@
-// define(['./cocktail/lib/cocktail'], function(cocktail){
 define(function (require, exports, module) {
-    var cocktail = require('./cocktail/lib/cocktail');
+    var cocktail = require('cocktail');
     
     cocktail.mix({
         '@exports': module,
