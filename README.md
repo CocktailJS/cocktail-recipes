@@ -2,6 +2,9 @@
 
 A playground to test different Cocktail flavors.
 
+##browser
+Experimental example to run CocktailJS on browser using `browserify` or `requirejs`
+
 ##enumerables
 Simple showcase for composing traits and talents.
 
