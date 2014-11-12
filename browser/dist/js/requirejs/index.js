@@ -1,21 +1,22 @@
 requirejs.config({
+    baseUrl: './js/requirejs/',
     packages: [{
         name: 'cocktail',
-        location: './js/requirejs/cocktail',
+        location: 'cocktail',
         main: 'lib/cocktail.js'
     }]
 });
 
-requirejs(['./js/requirejs/app'],
-function(app){
+requirejs(['app'],
+    function(app){
 
+        window.onload = function() {
+            var body = document.body,
+                myApp = app.create(body);
 
-    window.onload = function() {
-        var body = document.body,
-            myApp = app.create(body);
+            body.style.fontSize = '50px';
 
-        body.style.fontSize = '50px';
-
-        myApp.sayHello();
-    };
-});
+            myApp.sayHello();
+        };
+    }
+);
