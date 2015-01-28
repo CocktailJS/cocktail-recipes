@@ -4,7 +4,7 @@
   "description": "A few bubbles with cocktail",
   "main": "index.js",
   "dependencies": {
-    "cocktail": "~0.5"
+    "cocktail": "latest"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

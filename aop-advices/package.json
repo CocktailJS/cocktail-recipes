@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cocktail": "^0.6.0",
-    "cocktail-trait-advisable": "^1.0.1"
+    "cocktail": "latest",
+    "cocktail-trait-advisable": "latest"
   }
 }

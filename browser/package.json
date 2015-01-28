@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cocktail": "^0.5.3"
+    "cocktail": "latest"
   },
   "devDependencies": {
     "browserify": "^6.2.0"
