@@ -2,6 +2,9 @@
 
 A playground to test different Cocktail flavors.
 
+##aop-advices
+Example using `cocktail-trait-advisable`.
+
 ##browser
 Experimental example to run CocktailJS on browser using `browserify` or `requirejs`
 
