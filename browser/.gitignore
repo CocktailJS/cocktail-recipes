@@ -1,4 +1,4 @@
 .DS_Store
 /node_modules/
 /dist/js/app.js
-/dist/js/requirejs/cocktail/
+/dist/js/requirejs/cocktail.js

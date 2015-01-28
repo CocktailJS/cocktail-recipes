@@ -2,7 +2,7 @@
 
 var app = require('./src/app');
 
-window.onload = function() {
+function start() {
     var body = document.body,
         myApp = app.create(body);
 
@@ -11,3 +11,4 @@ window.onload = function() {
     myApp.sayHello();
 };
 
+document.addEventListener('DOMContentLoaded', start, false);
