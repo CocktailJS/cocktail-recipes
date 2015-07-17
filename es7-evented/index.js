@@ -54,15 +54,26 @@ class EventedClass {
     @property({getter: 'has'})
     _value = true
 
+    constructor (name) {
+        this._name = name;
+    }
+
+
     foo() {
-       this.emit('foo')
+       this.emit('foo', `${this._name}`)
     }
 }
 
 let obj = new EventedClass();
 
-obj.on('foo', function(){console.log('foo!!')})
+obj.on('foo', () => console.log('event handled -> foo') )
 
 obj.foo()
+
+let named = new EventedClass('wiiii')
+
+named.on('foo', (name) => console.log(`event handled -> foo name: ${name}`))
+named.foo()
+
 
 console.log(obj.hasValue()) // beacuse @property({getter: 'has'})
