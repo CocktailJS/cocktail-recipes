@@ -11,6 +11,9 @@ Experimental example to run CocktailJS on browser using `browserify` or `require
 ##enumerables
 Simple showcase for composing traits and talents.
 
+##es7-evented
+Simple showcase for composing a `@evented` decorator using `traits-decorator` to apply `cocktail-trait-eventable`.
+
 ##light-beer  
 **light-beer** holds a few simple examples using CocktailJS. From some object merges to using Traits and Talents, define classes using the single paramater class definition and more.
 
