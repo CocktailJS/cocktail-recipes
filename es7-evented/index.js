@@ -45,7 +45,7 @@ function property ({getter = 'get', setter = 'set'} = {})  {
     }
 }
 
-function getter (prefix = "get") {
+function getter (prefix = 'get') {
     return function (...args) {
         property({getter: prefix, setter: false})(...args)       
     }
