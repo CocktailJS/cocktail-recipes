@@ -45,13 +45,19 @@ function property ({getter = 'get', setter = 'set'} = {})  {
     }
 }
 
+function getter (prefix = "get") {
+    return function (...args) {
+        property({getter: prefix, setter: false})(...args)       
+    }
+}
+
 @evented
 class EventedClass {
 
-    @property() // this will add a getEmitter and setEmitter
+    @getter() // this will add a getEmitter **required** by eventable trait
     _emitter = new EventEmitter
 
-    @property({getter: 'has'})
+    @property({getter: 'has'}) // getter: hasValue, setter: setValue
     _value = true
 
     constructor (name) {
