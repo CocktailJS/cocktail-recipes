@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "cocktail-trait-eventable": "0.0.6",
+    "properties-decorator": "^1.0.0",
     "traits-decorator": "^1.0.1"
   },
   "devDependencies": {
